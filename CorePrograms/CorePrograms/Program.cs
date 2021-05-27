@@ -14,6 +14,7 @@ namespace CorePrograms
             Console.WriteLine("4.Harmonic Number");
             Console.WriteLine("5:Factors of Number");
             Console.WriteLine("6:Quotient and Reminder");
+            Console.WriteLine("7: Swap the Numbers");
 
             int choice = Convert.ToInt32(Console.ReadLine());
             switch (choice)
@@ -57,6 +58,14 @@ namespace CorePrograms
                     Console.WriteLine("Enter divisor : ");
                     int divis = Convert.ToInt32(Console.ReadLine());
                     quotientreminder.Calculate(divi, divis);
+                    break;
+                case 7:
+                    SwapNum swapNum = new SwapNum();
+                    Console.WriteLine("Enter Two Values to swap:");
+                    int value1 = Convert.ToInt32(Console.ReadLine());
+                    int value2 = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine("values before swap is " + value1 + " and " + value2);
+                    swapNum.swapValues(value1, value2);
                     break;
 
             }
