@@ -16,6 +16,7 @@ namespace CorePrograms
             Console.WriteLine("6:Quotient and Reminder");
             Console.WriteLine("7:Swap the Numbers");
             Console.WriteLine("8:Even and Odd number");
+            Console.WriteLine("9:check no. is Vowel or Consonant");
 
             int choice = Convert.ToInt32(Console.ReadLine());
             switch (choice)
@@ -73,6 +74,13 @@ namespace CorePrograms
                     Console.WriteLine("Enter number to check Odd and Even:");
                     int inputEvenOdd = Convert.ToInt32(Console.ReadLine());
                     evenOdd.Number(inputEvenOdd);
+                    break;
+                case 9:
+                    VowelConsonant vowelConsonant = new VowelConsonant();
+                    Console.WriteLine("Enter Alphabet to check vowel or consonant");
+                    char inputVowel = Convert.ToChar(Console.ReadLine());
+                    vowelConsonant.CheckVowel(inputVowel);
+                    Console.ReadKey();
                     break;
             }
 
