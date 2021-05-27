@@ -14,7 +14,8 @@ namespace CorePrograms
             Console.WriteLine("4.Harmonic Number");
             Console.WriteLine("5:Factors of Number");
             Console.WriteLine("6:Quotient and Reminder");
-            Console.WriteLine("7: Swap the Numbers");
+            Console.WriteLine("7:Swap the Numbers");
+            Console.WriteLine("8:Even and Odd number");
 
             int choice = Convert.ToInt32(Console.ReadLine());
             switch (choice)
@@ -67,7 +68,12 @@ namespace CorePrograms
                     Console.WriteLine("values before swap is " + value1 + " and " + value2);
                     swapNum.swapValues(value1, value2);
                     break;
-
+                case 8:
+                    EvenOdd evenOdd = new EvenOdd();
+                    Console.WriteLine("Enter number to check Odd and Even:");
+                    int inputEvenOdd = Convert.ToInt32(Console.ReadLine());
+                    evenOdd.Number(inputEvenOdd);
+                    break;
             }
 
         }
