@@ -17,6 +17,7 @@ namespace CorePrograms
             Console.WriteLine("7:Swap the Numbers");
             Console.WriteLine("8:Even and Odd number");
             Console.WriteLine("9:check no. is Vowel or Consonant");
+            Console.WriteLine("10:Largest number among Three"); 
 
             int choice = Convert.ToInt32(Console.ReadLine());
             switch (choice)
@@ -82,6 +83,19 @@ namespace CorePrograms
                     vowelConsonant.CheckVowel(inputVowel);
                     Console.ReadKey();
                     break;
+                case 10:
+                    Largest largest = new Largest();
+                    Console.WriteLine("Enter the 3 numbers to check largest one");
+                    int number1 = Convert.ToInt32(Console.ReadLine());
+                    int number2 = Convert.ToInt32(Console.ReadLine());
+                    int number3 = Convert.ToInt32(Console.ReadLine());
+                    largest.GreaterNumber(number1, number2, number3);
+                    break;
+                default:
+                    {
+                        Console.WriteLine("Enter a Right choice");
+                        break;
+                    }
             }
 
         }

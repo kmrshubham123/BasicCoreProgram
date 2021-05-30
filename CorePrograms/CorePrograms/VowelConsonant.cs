@@ -8,7 +8,9 @@ namespace CorePrograms
     {
         public void CheckVowel(char alphabet)
         {
-            if (alphabet == 'a' | alphabet == 'e' | alphabet == 'i' | alphabet == 'o' | alphabet == 'u' | alphabet == 'A' | alphabet == 'E' | alphabet == 'I' | alphabet == 'O' | alphabet == 'U')
+
+            char check = Char.ToLower(alphabet);
+            if (check == 'a' | check == 'e' | check == 'i' | check == 'o' | check == 'u')       
             {
                 Console.WriteLine(alphabet + " is Vowel");
             }
