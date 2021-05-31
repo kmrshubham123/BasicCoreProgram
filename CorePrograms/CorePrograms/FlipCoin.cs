@@ -15,11 +15,11 @@ namespace CorePrograms
             Console.WriteLine("Enter How many times you want to Flip a coin :- ");
             int FlipNumber = Convert.ToInt32(Console.ReadLine());
 
-            for (int coinFlip = 0; coinFlip <= FlipNumber; coinFlip++)
+            for (int coinFlip = 1; coinFlip <= FlipNumber; coinFlip++)
             {
                 Random random = new Random();
                 double FlipCoin = random.NextDouble();
-                if (FlipCoin < 0.5)
+                if (FlipCoin <= 0.5)
                     tails++;
                 else
                     heads++;
