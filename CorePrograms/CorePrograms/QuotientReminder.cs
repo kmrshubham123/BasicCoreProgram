@@ -6,12 +6,18 @@ namespace CorePrograms
 {
     class QuotientReminder
     {
-        public void Calculate(int divident, int diviser)
+        public void Calculate()
         {
-            float quotient = (divident / diviser);
-            Console.WriteLine("Quotient is:" + quotient);
-            int reminder = (divident % diviser);
-            Console.WriteLine("Reminder is:" + reminder);
+            Console.WriteLine("Enter a Dividend : ");
+            int divident = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Enter a Divisor : ");
+            int divisor = Convert.ToInt32(Console.ReadLine());
+
+            int quotient = divident / divisor;
+            int remainder = divident % divisor;
+
+            Console.WriteLine(quotient + " is quotient, " + remainder + " is remainder");
         }
     }
 }

@@ -55,12 +55,8 @@ namespace CorePrograms
                     factors.Factor(inputfact);
                     break;
                 case 6:
-                    QuotientReminder quotientreminder = new QuotientReminder();
-                    Console.WriteLine("Enter dividend: ");
-                    int divi = Convert.ToInt32(Console.ReadLine());
-                    Console.WriteLine("Enter divisor : ");
-                    int divis = Convert.ToInt32(Console.ReadLine());
-                    quotientreminder.Calculate(divi, divis);
+                    QuotientReminder quotientReminder = new QuotientReminder();
+                    quotientReminder.Calculate();
                     break;
                 case 7:
                     SwapNum swapNum = new SwapNum();
